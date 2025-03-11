@@ -1,0 +1,220 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.is-hidden-reviews {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.window {
+  background-color: white;
+  padding: 32px 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s;
+  text-align: start;
+  border-radius: 15px;
+
+  @media screen and (min-width: 704px) {
+    padding: 40px;
+  }
+
+  &__title {
+    color: $textcolor;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    width: 255px;
+    display: inline-block;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 704px) {
+      font-size: 24px;
+      line-height: 1.4;
+      margin-bottom: 40px;
+      width: 298px;
+    }
+  }
+  &__span {
+    color: $accentcolor;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 704px) {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    position: relative;
+  }
+
+  &__input {
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+    width: 263px;
+    display: block;
+    margin-bottom: 14px;
+    padding: 10px 18px 10px 106px;
+
+    &:last-child {
+      padding: 14px 18px;
+    }
+
+    @media screen and (min-width: 704px) {
+      padding: 22px 24px 22px 177px;
+      margin-bottom: 19px;
+      width: 437px;
+      &:last-child {
+        padding: 22px 24px;
+      }
+    }
+  }
+  &__svg {
+    width: 24px;
+    height: 18px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+
+    @media screen and (min-width: 704px) {
+      width: 32px;
+      height: 24px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 53px;
+    top: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+
+    &::after {
+      content: '';
+      height: 24px;
+      width: 2px;
+      background-color: $cookindseccolor;
+      display: inline-block;
+      position: absolute;
+      left: 45px;
+      bottom: -5px;
+    }
+
+    @media screen and (min-width: 704px) {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.36px;
+      left: 73px;
+      top: 24px;
+      position: absolute;
+
+      &::after {
+      content: '';
+      height: 32px;
+      width: 2px;
+      background-color: $cookindseccolor;
+      display: inline-block;
+      position: absolute;
+      left: 70px;
+      bottom: -10px;
+    }
+    }
+  }
+  &__com {
+    display: flex;
+    width: 263px;
+    padding: 14px 18px 60px 18px;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+
+    @media screen and (min-width: 704px) {
+      padding: 22px 24px 93px 24px;
+    }
+  }
+
+  &__send {
+    display: flex;
+    padding: 12px 28px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: $accentcolor;
+    border: none;
+    color: $backgroundcolor;
+    margin-top: 18px;
+
+    @media screen and (min-width: 704px) {
+      display: flex;
+      padding: 14px 40px;
+      align-items: flex-start;
+      gap: 14px;
+    }
+  }
+}
+
+.btn {
+  &__close {
+    width: 28px;
+    height: 28px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  &__svg {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 704px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

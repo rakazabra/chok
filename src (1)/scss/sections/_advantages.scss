@@ -1,0 +1,111 @@
+.advantages {
+  background-color: black;
+  padding: 20px 0;
+
+@media screen and (min-width: 704px) {
+      padding: 50px 0;
+    }
+
+  &__title {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-bottom: 18px;
+  }
+  &__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    width: 100%;
+
+    @media screen and (max-width:354px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width:355px) {
+      width: 308px;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 38px;
+    flex-direction: column;
+
+    @media screen and (min-width: 704px) {
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1136px) {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  }
+  &__symbol{
+    fill: $accentcolor;
+    width: 32px;
+    height: 32px;
+  }
+  &__link{
+    padding: 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-bottom: 22px;
+     border: solid gray 1px;
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+  }
+
+ &__item {
+
+  // flex-basis: 100%;
+
+
+  &::after{
+    display: none;
+  }
+
+  @media screen and (min-width: 704px){
+    &:first-child{
+      // margin-right: 60px;
+      margin-bottom: 32px;
+    }
+   }
+
+    @media screen and (min-width: 1136px) {
+    position: relative;
+    &:first-child{
+      margin-right: 0;
+    }
+  &::after{
+    content: "";
+    height: 124px;
+    width: 1px;
+    background-color: $cookindseccolor;
+    display: inline-block;
+    position: absolute;
+    left: 326px;
+    top: 40px;
+  }
+  &:last-child::after {
+    display: none;
+    }
+  }
+}
+}

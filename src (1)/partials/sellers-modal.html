@@ -1,0 +1,97 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form class="modal__form">
+            <h2 class="modal__title"><span class="modal__span">BUY</span> NOW</h2>
+            <div class="modal__imglist">
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <picture>
+                        <source srcset="./img/mobile/chocbar-mobile@1x.webp 1x, ./img/mobile/chocbar-mobile@2x.webp 2x" media="(max-width: 767px)">
+                        <source srcset="./img/tablet/chocbar-tablet@1x.webp 1x, ./img/tablet/chocbar-tablet@2x.webp 2x" media="(min-width: 768px)">
+                        <source srcset="./img/desctop/chocbar-desctop@1x.webp 1x, ./img/desctop/chocbar-desctop@2x.webp 2x" media="(min-width: 1136px)">
+                        <img src="./img/chocbarmodal.webp" alt="chocolate" class="modal__img">
+                    </picture>
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">100 g</a>
+                    </button>
+                </li>
+                <li class="modal__item">
+                    <picture>
+                        <source srcset="./img/mobile/kinderbar-mobile@1x.webp 1x, ./img/mobile/kinderbar-mobile@2x.webp 2x" media="(max-width: 767px)">
+                        <source srcset="./img/tablet/kinderbar-tablet@1x.webp 1x, ./img/tablet/kinderbar-tablet@2x.webp 2x" media="(min-width: 768px)">
+                        <source srcset="./img/desctop/kinderbar-desctop@1x.webp 1x, ./img/desctop/kinderbar-desctop@2x.webp 2x" media="(min-width: 1136px)">
+                        <img src="./img/kinderbarmodal.webp" alt="chocolate" class="modal__img">
+                    </picture>
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">200 g</a>
+                    </button>
+                </li>
+                <li class="modal__item">
+                    <picture>
+                        <source srcset="./img/mobile/darkbar-mobile@1x.webp 1x, ./img/mobile/darkbar-mobile@2x.webp 2x" media="(max-width: 767px)">
+                        <source srcset="./img/tablet/darkbar-tablet@1x.webp 1x, ./img/tablet/darkbar-tablet@2x.webp 2x" media="(min-width: 768px)">
+                        <source srcset="./img/desctop/darkbar-desctop@1x.webp 1x, ./img/desctop/darkbar-desctop@2x.webp 2x" media="(min-width: 1136px)">
+                        <img src="./img/darkbarmodal.webp" alt="chocolate" class="modal__img">
+                    </picture>
+                    <button class="modal__button" type="button">
+                        <a href="#modallink" class="modal__link">300 g</a>
+                    </button>
+                </li>
+            </ul>
+            <ul class="modal__svglist">
+                <li class="modal__svgitem">
+                    <svg class="modal__circlesvg">
+                        <use href="./img/symbol-defs.svg#icon-rectangle"></use>
+                    </svg>
+                </li>
+                <li class="modal__svgitem">
+                    <svg class="modal__circlesvg">
+                        <use href="./img/symbol-defs.svg#icon-ellipse"></use>
+                    </svg>
+                </li>
+                <li class="modal__svgitem">
+                    <svg class="modal__circlesvg">
+                        <use href="./img/symbol-defs.svg#icon-ellipse"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+            <label for="info" class="modal__signature">Personal information</label>
+            <div class="modal__box">
+                <input id="info" class="modal__input" type="text" placeholder="Name" required>
+                <input id="info" class="modal__input" placeholder="Surname" required>
+            </div>
+            <label for="mail" class="modal__signature">Email</label>
+            <div class="modal__inputbox">
+            <input id="mail" type="email" class="modal__emailinput" placeholder="Enter your email" required>
+        </div>
+            <label for="phone" class="modal__signature">Phone number</label>
+            <div class="modal__wrap">
+                <input id="phone" type="tel" class="modal__phoneinput" placeholder="Phone number" required>
+                <div class="modal__numberbox">
+                <svg class="modal__svgflag">
+                    <use href="./img/symbol-defs.svg#icon-frame"></use>
+                </svg>
+                <p class="modal__text">+380</p>
+            </div>
+            </div>
+            <label for="card" class="modal__signature">Card number</label>
+            <div class="modal__wrapper">
+                <input id="card" type="text" class="modal__inputcard" placeholder="Enter card" required>
+                <svg class="modal__svgcard">
+                    <use href="./img/symbol-defs.svg#icon-mastercard"></use>
+                </svg>
+            </div>
+            <label for="com" class="modal__signature">Comment</label>
+            <div class="modal__inputbox">
+            <textarea name="" id="com" class="modal__textarea" placeholder="Enter text"></textarea>
+        </div>
+            <button type="submit" class="modal__submit">Submit</button>        
+        </form>
+        <button type="button" class="button__close" data-modal-close>
+            <svg class="button__svg">
+                <use href="./img/symbol-defs.svg#icon-closeblack"></use>
+            </svg>
+        </button>
+    </div>
+</div>

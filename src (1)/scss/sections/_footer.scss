@@ -1,0 +1,147 @@
+.footer {
+    padding-top: 62px;
+
+
+
+     &__box {
+        background-image: url(./../img/subcribe.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-bottom: 63px;
+     }
+    &__title {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 62px;
+    }
+
+    &__desc {
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+        width: 326px;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+
+
+    &__sub {
+        padding: 12px 28px;
+        align-items: flex-start;
+        gap: 14px;
+        background-color: #FD9222;
+        border: none;
+        border-radius: 50px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__div {
+        background: #1E1823;
+
+        align-items: center;
+        padding-bottom: 54px;
+        display: flex;
+        justify-content: flex-start;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__address {
+        margin-left: auto;
+        margin-right: 148px;
+        gap: 4px;
+        margin-top: 32px;
+    }
+
+    &__color {
+        color: #FD9222;
+    }
+
+    &__chocolate {
+        color: #ffffff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; 
+        letter-spacing: -0.48px;
+        width: 300px;
+        text-align: center;
+        padding-top: 32px;
+    }
+
+
+    &__contant {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 14px;
+
+    
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+        }
+    }
+
+    &__address {
+        padding-left: 20px;
+    }
+
+    &__line {
+        width: 335px;
+        height: 0px;
+        background: rgba(255, 255, 255, 0.10);
+    }
+
+    &__link {
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+        margin-top: 4px;
+        display: inline;
+            }
+
+    &__list {
+        background: #1E1823;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+
+    &__a {
+        color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    padding-bottom: 18px;
+    display: inline-block;
+    }
+
+
+}   
